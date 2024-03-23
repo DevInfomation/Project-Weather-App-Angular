@@ -7,11 +7,13 @@ import { WeatherComponent } from './components/weather/weather.component';
 import { WeatherService } from './services/weather.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { GeocodeComponent } from './components/geocode/geocode.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherComponent
+    WeatherComponent,
+    GeocodeComponent
   ],
   imports: [
     BrowserModule,
