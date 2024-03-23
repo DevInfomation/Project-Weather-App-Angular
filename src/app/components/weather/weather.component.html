@@ -1,19 +1,19 @@
-<div>
+<div class="container">
     <h1>Weather Application</h1>
 
-    <form action="">
+    <form>
         <div>
-            <input type="text" name="city" id="cityName" placeholder="Enter a city name" [(ngModel)]="city">
+            <input type="text" name="country" id="countryName" class="inputField" placeholder="Enter a country name" [(ngModel)]="country">
         </div>
         <div>
-            <input type="text" name="country" id="countryName" placeholder="Enter a country name" [(ngModel)]="country">
+            <input type="text" name="city" id="cityName" class="inputField" placeholder="Enter a city name" [(ngModel)]="city">
         </div>
-        <button type="button" (click)="getWeather()">Display Weather</button>
+        <button type="button" class="btn" (click)="getWeather()">Display Weather</button>
     </form>
 
     <div *ngIf="weatherData">
         <h2>The Current Weather In: {{weatherData.name}}</h2>
-        <p>Temperature: {{weatherData.main.temp}}°C</p>
+        <p>Temperature: {{weatherData.main.temp}} °C</p>
         <p>Humidity: {{weatherData.main.humidity}}</p>
         <p>Weather: {{weatherData.weather[0].description}}</p>
     </div>
