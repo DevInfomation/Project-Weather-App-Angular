@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
 export class WeatherService {
 
   apiKeyOpenWeather = '390c03bf6713216ccbdf04344ede0d66';
-  apiKeyForGeocode = '973184556039930816444x39006';
 
   constructor(private http:HttpClient) {  }
 

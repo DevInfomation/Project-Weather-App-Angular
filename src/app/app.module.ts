@@ -6,14 +6,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { WeatherComponent } from './components/weather/weather.component';
-import { GeocodeComponent } from './components/geocode/geocode.component';
 import { WeatherService } from './services/weather.service';
+import { GeocodeService } from './services/geocode.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
-    GeocodeComponent
   ],
   imports: [
     BrowserModule,

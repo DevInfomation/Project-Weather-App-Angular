@@ -22,4 +22,11 @@ export class WeatherComponent {
       console.log(data);
     })
   }
+
+  // getGeoLocation() {
+  //   this.geoCodeService.getGeocode(this.city).subscribe(data=> {
+  //     this.location=data;
+  //     console.log(data);
+  //   })
+  // }
 }

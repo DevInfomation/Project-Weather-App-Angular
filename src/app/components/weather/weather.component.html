@@ -16,5 +16,11 @@
         <p>Temperature: {{weatherData.main.temp}} °C</p>
         <p>Humidity: {{weatherData.main.humidity}}</p>
         <p>Weather: {{weatherData.weather[0].description}}</p>
+        <p>Location: {{weatherData.coord.lon}} and {{weatherData.coord.lat}}</p>
     </div>
+
+    <!-- <div *ngif="location">
+        <p>location: {{location.j}}</p>
+    
+    </div> -->
 </div>
